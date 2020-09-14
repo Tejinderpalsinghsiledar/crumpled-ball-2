@@ -23,7 +23,7 @@ box1 = new Box(660,580,20,200)
 box2= new Box(500,580,20,200)
 box3=new Box(585,660,170,20)
 ground1 = new ground(400,680,800,10)
-ball = new Ball(200,200,25);
+ball = new Ball(150,360,25);
 	Engine.run(engine);
   
 }
@@ -47,7 +47,7 @@ ball.display();
 
 function keyPressed(){
 	if (keyCode === UP_ARROW){
-		Matter.Body.applyForce(ball.body,ball.body.position,{x:85,y:-85});
+		Matter.Body.setPosition(ball.body,{x:600,y:-600});
 	}
 }
 

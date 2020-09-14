@@ -1,7 +1,7 @@
 class Ball{
   constructor(x,y,radius){
       var options={
-       restitution:0.5
+       restitution:0
       }
       this.body=Bodies.circle(x,y,radius,options)
       this.radius=radius
@@ -17,7 +17,7 @@ class Ball{
       translate(pos.x,pos.y)
       angleMode(RADIANS)
       rotate(angle)
-      image(this.image,50,200)
+      image(this.image,0,0,80,80)
       pop()
   }
 }
